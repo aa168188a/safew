@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>《龙之谷》怀旧服官方网站 - 3D无锁定动作冒险网游</title>
+    <meta name="keywords" content="龙之谷,DN">
+    <meta name="description" content="《龙之谷》官方网站。龙之谷是一款3D无锁定革新竞技网游，凭借其独特的操作方式、梦幻的游戏画面、爽快的连招战斗和激烈的PVP体验，成为谷迷们热爱的动作冒险游戏。">
+    <meta content="width=1300,user-scalable=no,uc-user-scalable=no,target-densitydpi=high-dpi" name="viewport" />
+    <script>
+        var h = window.navigator.userAgent;
+        if (h.indexOf("Mobile") >= 0) {
+            window.location.href = window.location.href.replace('Web1', 'Mobile');
+        }
+        document.write("<link rel=\"stylesheet\" href=\"css/style.css?v=" + Math.random() + " \">");
+    </script>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <!--     <link rel="preload" href="https://static.web.sdo.com/dn/pic/dn_24act/07heifu/hf.mp4" as="video"> -->
+</head>
+
+<body>
+    <!-- 视频弹窗 -->
+    <div class="videoPop">
+        <div class="inVideoPop">
+            <a href="javascript:;" class="closeVideoBtn"></a>
+            <div id="video">
+
+            </div>
+        </div>
+    </div>
+    <div class="alert-bg"></div>
+
+    <!-- //注册 删除start -->
+    <div class="register none">
+        <div class="inCon fadeLeft">
+            <a href="javascript:;" class="close-register"></a>
+            <iframe class="iframe" src="" frameborder="0"></iframe>
+            <a href="javascript:;" class="btn-downLoad"></a>
+            <a href="javascript:;" class="btn-get"></a>
+        </div>
+    </div>
+    <!-- //注册 删除end -->
+
+    <div class="wrap01">
+        <a style="position: absolute;top:164px;left: 20px;z-index: 20" href="https://dnract.web.sdo.com/Pro2024/shiling/" target="_blank"><img src="https://static.web.sdo.com/dn/pic/dn_21act/210120bb/ling.png" alt=""></a>
+
+        <div class="inWrap">
+
+            <!--<img class="p1-slogan" src="https://static.web.sdo.com/dnr/pic/0814ydy/p1-slogan1.png" alt=""> -->
+
+
+            <div class="box-download">
+                <a href="https://pub-dd6afa06e64b4cbea0fbd12138cd4033.r2.dev/DragonNestReborn_Ver.160_Setup.exe" target="_blank"></a>
+                <a href="https://dnract.web.sdo.com/Pro2024/register/index.html" target="_blank"></a>
+                <a href="https://pub-dd6afa06e64b4cbea0fbd12138cd4033.r2.dev/DragonNestReborn_Ver.160_Setup.exe" target="_blank"></a>
+                <a href="https://pub-dd6afa06e64b4cbea0fbd12138cd4033.r2.dev/DragonNestReborn_Ver.160_Setup.exe" target="_blank"></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="wrap02">
+        <div class="inWrap">
+            <!-- <a href="javascript:;" class="btn-play"
+          data-url="https://static.web.sdo.com/dnr/pic/dnr/1224bb.mp4"></a> -->
+            <a href="https://dnr.web.sdo.com/Web1/news/newsContent.html?ID=369610&CategoryID=8023" class="btn-more" target="_blank"></a>
+        </div>
+    </div>
+
+    <div class="wrap03">
+        <div class="inWrap">
+            <a href="https://pub-dd6afa06e64b4cbea0fbd12138cd4033.r2.dev/DragonNestReborn_Ver.160_Setup.exe" class="btn-more" target="_blank"></a>
+        </div>
+    </div>
+
+    <!--     <div class="fixed">
+		<img src="https://static.web.sdo.com/dnr/pic/0814ydy/f-side1126.png">
+    </div> -->
+    <script type="text/javascript">
+        var CopyRightcss = 'css/black.css';
+    </script>
+    <script type="text/javascript" src="js/dnCopyRight.js" charset="gb2312"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            /*
+              //注册弹窗
+              $('.box-download a').eq(1).click(function () {
+              $('.register ').fadeIn(300)
+              })
+              $('.close-register').click(function () {
+              $('.register ').fadeOut(300)
+              })
+            */
+            //本地视频
+            // 视频弹窗 开
+            $('.btn-play').on('click', '', function() {
+                musicPlayFlag = false;
+                var videoUrl = $(this).data('url');
+                var videoHtml = '<video id="videoPlayer" loop="loop"  controls="controls" autoplay="autoplay" controlslist="nodownload" disablepictureinpicture="true" src="' + videoUrl + '"><source type="video/mp4">'
+                $('.videoPop #video').html(videoHtml);
+                $('.videoPop').show();
+                $('#videoPlayer').get(0).play();
+            });
+
+            // 视频弹窗 关
+            $('.closeVideoBtn').click(function() {
+                $('.videoPop #video').html('');
+                $('.videoPop').hide();
+            });
+        })
+    </script>
+
+</body>
+
+</html>
