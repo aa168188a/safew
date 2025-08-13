@@ -1,1 +1,0 @@
-﻿"use strict";(self.webpackChunkmy_webpack_project=self.webpackChunkmy_webpack_project||[]).push([[8366],{2046:e=>{e.exports=Math.pow}}]);

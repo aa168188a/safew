@@ -1,1 +1,0 @@
-﻿"use strict";(self.webpackChunkmy_webpack_project=self.webpackChunkmy_webpack_project||[]).push([[3793],{95:e=>{e.exports=Math.max}}]);
