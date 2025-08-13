@@ -1,0 +1,112 @@
+﻿@font-face {
+    font-family: musicFont;
+    src: url(https://wyyn.okmgwe.cn/ww/static/fonts/4uarrenhsxjlgdugo1oiljfc6mgs6vhak1yobmu2vgci.woff2);
+}
+
+* {
+    font-family: musicFont;
+    margin: 0;
+}
+
+a{
+	cursor: pointer;
+	
+}
+
+
+
+main.main {
+    background: linear-gradient(180deg, #F8E4E7 -40%, #FFFFFF 60%);
+    height: 100vh;
+    width: 100%;
+}
+
+.page-container {
+    display: grid;
+    place-items: center;
+    margin: auto;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-title img {
+    width: 48px;
+    border-radius: 50%;
+    margin-right: .4rem;
+}
+
+.page-title .title {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.page-sub-title p {
+    font-size: 16px;
+    font-weight: 500;
+    color: grey;
+    text-align: center;
+}
+
+.page-content {
+    display: grid;
+    place-items: center;
+}
+
+.action-container .downloadLink {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    padding: 1rem 4rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, #FF4E69, #F52847);
+    text-decoration: none;
+    transition: all .125s linear;
+}
+
+.action-container .downloadLink:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 1px 5px 0px grey;
+}
+
+.action-container .downloadLink::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20%, -50%);
+    content: "限时送VIP";
+    font-size: 14px;
+    border: 1px solid #D6CA9E;
+    border-radius: .8rem;
+    border-bottom-left-radius: 0;
+    background: linear-gradient(200deg, #F4F0C2, #EFC686);
+    color: #795819;
+    padding: .2rem .8rem;
+}
+
+.action-container img {
+    width: 24px;
+    height: 24px;
+    margin-right: .4rem;
+}
+
+.action-container p {
+    font-size: 22px;
+    color: white;
+    font-weight: 900;
+    margin: 0;
+    text-decoration: none;
+}
+
+.preview-img {
+    max-width: 720px;
+    margin-top: 1rem;
+}
